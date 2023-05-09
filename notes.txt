@@ -18,16 +18,16 @@ Toby Dussek
 Python code lives in classes (or in functions), in modules, which live in packages (folders)
 
 Tuesday
-- intro and welcome
-  - what do you currently know
-  - what do you want to know
-- classes 
+> intro and welcome
+  > what do you currently know
+  > what do you want to know
+> classes 
 - abstract and concrete classes
-- validate types
-- inheritance
-- name mangled members
+> validate types
+> inheritance
+> name mangled members
 - if __name__== '__main__': revisited
-- using decorators
+> using decorators
 - functional programming: map, filter and reduce
 - after lunch review
 - instrinsics
