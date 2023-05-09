@@ -11,6 +11,6 @@ class Shape():
 
 if __name__ == '__main__':
     '''here we can exercise the code. E.G. make instances of the class'''
-    square = Shape(4) # the __init__ method will be called
+    square = Shape('four') # the __init__ method will be called
     triangle = Shape(3)
     print(square.sides, triangle.sides)
