@@ -11,10 +11,12 @@ class Derived(TopLevel):
     def __init__(self):
         super().__init__()
 
-
 if __name__ == '__main__':
     t = TopLevel()
     d = Derived()
     # we can explore some of the intrinsic properties provided by Python
     print( f'Class name is {Derived.__name__}' ) # careful - call on the class
-    print( f'class docstring is {Derived.__doc__}')
+    print( f'Class docstring is {Derived.__doc__}')
+    print( f'Class dictionary is {Derived.__dict__}')
+    print( f'class bases are {Derived.__bases__}')
+    print( f'class bases are {TopLevel.__bases__}')
