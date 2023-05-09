@@ -30,9 +30,9 @@ Tuesday
 > using decorators
 >s after lunch review
 > instrinsics
-- functional programming: map, filter and reduce
+> functional programming: map, filter and reduce
 - comprehensions, generators and yield
-- Loading local and remote data (requests)
+> Loading local and remote data (requests)
 
 Wednesday
 - functional programming: parameters
