@@ -11,7 +11,7 @@ class Shape():
         self.checkSides(num_sides) # here we assign a property to this class
         # self.checkColour(colour)
         # we can use 'name-mangling' to protect properties
-        self.colour # even though this looks like a property, it will call the setter method
+        self.colour = colour # even though this looks like a property, it will call the setter method
     # we can declare methods to validate the parameters
     def checkSides(self, num_sides):
         '''Validate the number of sides is a non-zero positive integer'''
