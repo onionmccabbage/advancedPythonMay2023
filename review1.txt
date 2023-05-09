@@ -1,4 +1,4 @@
-Advanced Python Review Exercise 1 about 50 ins (until 1:35)
+Advanced Python Review Exercise 1 about 50 mins (until 1:35)
 =================================
 In a new module write a class called 'NumberFun' with one property, a positive integer
 Write decorated methods to get and set the property. Invalid entries should default to 1

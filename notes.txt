@@ -8,7 +8,7 @@ Toby Dussek
 9:30 start
 11:00 coffee
 12:30 lunch
-3:00 tea
+3:00 tea until 3:17
 4:30 end
 
 - you will need: a copy of Python 3.x (real or virtual)
@@ -28,9 +28,9 @@ Tuesday
 > name mangled members
 > if __name__== '__main__': revisited
 > using decorators
-- functional programming: map, filter and reduce
 - after lunch review
 - instrinsics
+- functional programming: map, filter and reduce
 - comprehensions, generators and yield
 - Loading local and remote data (requests)
 
