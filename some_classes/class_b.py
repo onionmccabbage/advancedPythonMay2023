@@ -39,7 +39,10 @@ class Figure(Shape):
     def __str__(self): # override the __str__ of the parent
         return f'This {self.colour} shape is size {self.size} with {self.sides} sides'
 
+print(__name__)
+
 if __name__ == '__main__':
+    print('this line will only run when THIS module is executed (not on import)')
     pentagon = Figure(15, 'green', 3.25)
     pentagon.sides = 5
     # we can mutate any properties - they will be validated
