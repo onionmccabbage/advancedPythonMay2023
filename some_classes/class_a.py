@@ -3,14 +3,39 @@
 
 class Shape():
     '''It is common practice to document your classes with a docstring
-       Every method of a class must take 'self' as an argument'''
-    def __init__(self, num_sides):
+       Every method of a class must take 'self' as an argument
+       This clas will capture the number of sides and the colour of a shape'''
+    def __init__(self, num_sides, colour):
         '''the __init__ method is similar to a constructor.
            Runs every time we instantiate the class'''
-        self.sides = num_sides # here we assign a property to this class
+        self.checkSides(num_sides) # here we assign a property to this class
+        self.checlColour(colour)
+    # we can declare methods to validate the parameters
+    def checkSides(self, num_sides):
+        '''Validate the number of sides is a non-zero positive integer'''
+        if type(num_sides)==int and num_sides > 0:
+            ''' all good '''
+            self.sides = num_sides
+        else:
+            '''not valid...'''
+            raise Exception('number of sides must be a positive integer')
+    def checlColour(self, colour):
+        '''Check the colour is a non-empty string, or set a default'''
+        if isinstance(colour, str) and colour !='':
+            '''all good'''
+            self.colour = colour
+        else: # set a default
+            self.colour = 'grey'
+    def __str__(self): # here we override the built-in __str__ method with our own
+        '''The __str__ method will be used by any print call'''
+        return f'This shape has {self.sides} sides and is {self.colour}'
+    def __repr__(self): # here we override the built-in __repr__ method
+        '''the __repr__ method will be only be used in immediate mode (NOT by print)'''
+        return f'This {self.colour} shape has {self.sides} sides'
 
 if __name__ == '__main__':
     '''here we can exercise the code. E.G. make instances of the class'''
-    square = Shape('four') # the __init__ method will be called
-    triangle = Shape(3)
-    print(square.sides, triangle.sides)
+    # square = Shape('four', 'Blue') # 
+    square = Shape(4, 'Blue') # the __init__ method will be called
+    triangle = Shape(3, 'Yellow')
+    print(square.__repr__())
