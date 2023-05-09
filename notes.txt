@@ -26,7 +26,7 @@ Tuesday
 > validate types
 > inheritance
 > name mangled members
-- if __name__== '__main__': revisited
+> if __name__== '__main__': revisited
 > using decorators
 - functional programming: map, filter and reduce
 - after lunch review
@@ -47,7 +47,7 @@ Wednesday
 - populate db with sample data
 - read and nicely format values from the db
 - explore 'typicode' API as a static data source for JSON
-- after lunch review exercise until 3:30 
+- after lunch review exercise 
   ask questions, help each other, share code (screen-share)
 - we will be using the 'requests' library on Thursday 
   (you may come across the urllib.requests which is the old-skool way of doing things)
