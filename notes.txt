@@ -17,7 +17,7 @@ Toby Dussek
 
 Python code lives in classes (or in functions), in modules, which live in packages (folders)
 
-Monday
+Tuesday
 - intro and welcome
   - what do you currently know
   - what do you want to know
@@ -32,7 +32,7 @@ Monday
 - comprehensions, generators and yield
 - Loading local and remote data (requests)
 
-Tuesday
+Wednesday
 - functional programming: parameters
 - processing text/json
   - json.loads() takes JSON and returns Python structure
@@ -47,10 +47,10 @@ Tuesday
 - explore 'typicode' API as a static data source for JSON
 - after lunch review exercise until 3:30 
   ask questions, help each other, share code (screen-share)
-- we will be using the 'requests' library on Wednesday 
+- we will be using the 'requests' library on Thursday 
   (you may come across the urllib.requests which is the old-skool way of doing things)
 
-Wednesday
+Thursday
 - context manager - switch context e.g. for handling data input and output
 - networking server/client (microservices)
 - overview of Flask
@@ -61,7 +61,7 @@ Wednesday
 - after lunch lab exercise
 - pytest see https://docs.pytest.org/
 
-Thursday
+Friday
 - profiling: timings etc. (cprofile)
 - multithreading, also limits of mutlithreading concurrency
 - the global Interpreter Lock (GIL) will affect threading performance
