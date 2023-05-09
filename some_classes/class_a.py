@@ -4,12 +4,14 @@
 class Shape():
     '''It is common practice to document your classes with a docstring
        Every method of a class must take 'self' as an argument
-       This clas will capture the number of sides and the colour of a shape'''
+       This class will capture the number of sides and the colour of a shape'''
     def __init__(self, num_sides, colour):
         '''the __init__ method is similar to a constructor.
            Runs every time we instantiate the class'''
         self.checkSides(num_sides) # here we assign a property to this class
-        self.checlColour(colour)
+        # self.checkColour(colour)
+        # we can use 'name-mangling' to protect properties
+        self.colour # even though this looks like a property, it will call the setter method
     # we can declare methods to validate the parameters
     def checkSides(self, num_sides):
         '''Validate the number of sides is a non-zero positive integer'''
@@ -19,13 +21,19 @@ class Shape():
         else:
             '''not valid...'''
             raise Exception('number of sides must be a positive integer')
-    def checlColour(self, colour):
+    
+    # we use 'decorators' to set and get properties
+    @property
+    def colour(self): # even though this is a method, it will appear as a property
+        return self.__colour # by using double-underscore, we 'mangle' the name of this property
+    @colour.setter # this is the setter method for the property
+    def colour(self, colour):
         '''Check the colour is a non-empty string, or set a default'''
         if isinstance(colour, str) and colour !='':
             '''all good'''
-            self.colour = colour
+            self.__colour = colour
         else: # set a default
-            self.colour = 'grey'
+            self.__colour = 'grey'
     def __str__(self): # here we override the built-in __str__ method with our own
         '''The __str__ method will be used by any print call'''
         return f'This shape has {self.sides} sides and is {self.colour}'
@@ -38,4 +46,6 @@ if __name__ == '__main__':
     # square = Shape('four', 'Blue') # 
     square = Shape(4, 'Blue') # the __init__ method will be called
     triangle = Shape(3, 'Yellow')
+    # we can mutate properties of our class
+    square.sides = 'wibblywoo'
     print(square.__repr__())

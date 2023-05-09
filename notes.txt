@@ -23,6 +23,8 @@ Tuesday
   - what do you want to know
 - classes 
 - abstract and concrete classes
+- validate types
+- inheritance
 - name mangled members
 - if __name__== '__main__': revisited
 - using decorators
