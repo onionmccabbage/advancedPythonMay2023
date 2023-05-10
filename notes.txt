@@ -6,9 +6,9 @@ Toby Dussek
 
 
 9:30 start
-11:00 coffee
-12:30 lunch
-3:00 tea until 3:17
+11:00 coffee (15 mins)
+12:30 lunch (1 hr)
+3:00 tea (15 mins)
 4:30 end
 
 - you will need: a copy of Python 3.x (real or virtual)
@@ -31,11 +31,11 @@ Tuesday
 >s after lunch review
 > instrinsics
 > functional programming: map, filter and reduce
+> functional programming: parameters
 - comprehensions, generators and yield
 > Loading local and remote data (requests)
 
 Wednesday
-- functional programming: parameters
 - processing text/json
   - json.loads() takes JSON and returns Python structure
   - json.dumps() takes Python structure and returns JSON
@@ -49,7 +49,7 @@ Wednesday
 - explore 'typicode' API as a static data source for JSON
 - after lunch review exercise 
   ask questions, help each other, share code (screen-share)
-- we will be using the 'requests' library on Thursday 
+- we will be using the 'requests' library
   (you may come across the urllib.requests which is the old-skool way of doing things)
 
 Thursday
