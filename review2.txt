@@ -21,6 +21,7 @@ Then iterate over the retrieved data to populate your new table
 In another module, ask the user which userId they are interested in 
 Then retrieve and display all the 'posts' for that userId (use a 'WHERE' clause in the SQL)
 (You will need to validate that the userId is a positive integer within bounds)
+CAREFUL - userId is a number, so dont use quotes in the SQL statement
 
 Architecture:
 Use classes, functions and/or modules as you see fit
