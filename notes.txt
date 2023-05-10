@@ -42,7 +42,7 @@ Wednesday
 > persisting files: read/write/append/exclusive/overwrite, text, bytes, json
 > databases
   see https://wiki.python.org/moin/DatabaseProgramming
-- other db connections
+> other db connections (inc no-sql)
 > Create, Read and Update (and DELETE) - CRUD operations
 > populate db with sample data
 > read and nicely format values from the db

@@ -1,0 +1,9 @@
+This will be written to our log file
+This will be redirected to the log file
+This will be redirected to the log file
+This will be redirected to the log file
+This will be redirected to the log file
+This will be redirected to the log file
+This will be redirected to the log file
+This will be redirected to the log file
+This will be redirected to the log file
