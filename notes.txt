@@ -32,7 +32,7 @@ Tuesday
 > instrinsics
 > functional programming: map, filter and reduce
 > functional programming: parameters
-- comprehensions, generators and yield
+> comprehensions, generators and yield
 > Loading local and remote data (requests)
 
 Wednesday
@@ -53,7 +53,7 @@ Wednesday
   (you may come across the urllib.requests which is the old-skool way of doing things)
 
 Thursday
-- context manager - switch context e.g. for handling data input and output
+> context manager - switch context e.g. for handling data input and output
 - networking server/client (microservices)
 - overview of Flask
 - Testing: 
