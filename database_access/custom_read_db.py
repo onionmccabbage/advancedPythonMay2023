@@ -9,9 +9,16 @@ def custom_read_db():
         which_creature = input('Which creature? ')
         if type(which_creature)==str and which_creature !='':
             invalid = False
+    # in SQL queries we can use '=' or 'IS'
+    # or we can use wild-cards:
+    # LIKE will ignore case
+    # LIKE "s%" anything beginning s
+    # LIKE "%s" anything ending s
+    # LIKE "%s%" anything containing s
+
     st = f'''
     SELECT creature, count, cost FROM zoo
-    WHERE creature="{which_creature}"
+    WHERE creature LIKE "%{which_creature}%"
     '''
     try:
         curs.execute(st)
