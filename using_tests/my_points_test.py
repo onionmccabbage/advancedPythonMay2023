@@ -18,8 +18,13 @@ class testPoint(unittest.TestCase): # inherit from TestCase
     def testMoveBy2(self): # NB we MUST begin tests with the word 'test'
         '''Test the moveBy method'''
         self.point.moveBy(-5, -2)
-        self.assertEqual(self.point.x, -2) # we expect the point to be at 3-5 ie -2
-        self.assertEqual(self.point.y, 3)
+        self.assertEqual(self.point.display(), (-2, 3)) 
+    def testStringFails(self):
+        '''passing non-numeric values should raise a TypeError'''
+        with self.assertRaises(TypeError):
+            Point('3', 4) # oops
+        with self.assertRaises(TypeError):
+            self.point.y = True # not n int or a float
 
 if __name__ == '__main__':
     unittest.main() # this will run all our tests

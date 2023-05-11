@@ -28,6 +28,8 @@ class Point: # implicitly inherit from object
         '''change the x and y values by dx and dy'''
         self.x += dx # self.x will invoke the SETTER method for self.__x
         self.y += dy
+    def display(self):
+        return (self.x, self.y)
 
 if __name__ == '__main__':
     '''exercise the code'''
