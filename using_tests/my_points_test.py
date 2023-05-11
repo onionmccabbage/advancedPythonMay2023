@@ -25,6 +25,17 @@ class testPoint(unittest.TestCase): # inherit from TestCase
             Point('3', 4) # oops
         with self.assertRaises(TypeError):
             self.point.y = True # not n int or a float
+    def testHypot(self):
+        ''' testing the hypotenuse is correctly returned'''
+        self.point.moveBy(0,-1) # now at (3,4)
+        r = self.point.hypot()
+        self.assertAlmostEqual(r, 5.00, places=2)
+    def pos_neg_hypot_equal(self):
+        self.p_positive = Point(3,4)
+        self.p_negative = Point(-3,-4)
+        self.assertAlmostEqual(self.p_negative.hypot(), self.p_positive.hypot(), places=2)
+
+
 
 if __name__ == '__main__':
     unittest.main() # this will run all our tests

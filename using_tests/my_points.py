@@ -28,11 +28,21 @@ class Point: # implicitly inherit from object
         '''change the x and y values by dx and dy'''
         self.x += dx # self.x will invoke the SETTER method for self.__x
         self.y += dy
+    def where_am_i(self):
+        print('Point instance at x:{0:.2f} y:{1:.2f}'.format(self.x, self.y))
     def display(self):
         return (self.x, self.y)
+    def hypot(self):
+        '''return the hypotenuse given x and y'''
+        h = (self.x*self.x +self.y*self.y)**0.5
+        return h
 
 if __name__ == '__main__':
     '''exercise the code'''
     p1 = Point(5, 7)
     p1.moveBy(2, -3)
     print(p1.x, p1.y) # 7 4
+    p1.where_am_i()
+    # wrongly try to set x as a string
+    p2 = Point('3', 4)
+    print(p2.where_am_i())
