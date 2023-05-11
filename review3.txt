@@ -1,4 +1,4 @@
-Review 3
+Review 3 (until 3:25)
 ========
 Writing Tests and using client/server
 For this exercise, pick the ones you want to try, in any order
