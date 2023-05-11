@@ -1,0 +1,45 @@
+Writing Tests and using client/server
+For this exercise, pick the ones you want to try
+
+Unit Testing with unittest (or pytest):
+---------------------------------------
+Open the 'my_points.py' and 'my_points_test.py' modules
+Add a method to the Point class which returns the hypotenuse (derived from x and y)
+  h = (x*x + y*y)**0.5 
+  (h is a derived property, we never persist it as part of Point instances)
+Write tests for this method. for example x=3 y=4 gives h=5.00
+You may need 'assertAlmostEqual' with 'places=2' to get the test to pass
+Compare points at (3,4) and (-3,-4) and assert that they have the same hypotenuse
+
+Unit Testing:
+-------------
+See how many of the 'point' unit tests can be achieved with doctest
+Also, try to recreate the existing doctests (for 'cube', 'squares' and 'square_it') 
+with unittest or pytest
+
+Client/Server:
+--------------
+Return to the client and server modules and adapt the server with conditional blocks
+If the client asks for 'user/1' the server should invoke a request to 
+    'https://jsonplaceholder.typicode.com/users/1'
+    (do this by using yours or my code from earlier)
+
+Adapt the client so it asks for a category and an id number from the user, 
+then passes these to the server
+The server then requests 'https://jsonplaceholder.typicode.com/<category>/<id>'
+and sends the response back to the client
+
+Make the server write a log file of every request it receives
+
+Optional
+--------
+Write a new server (a microservice) as a front-end to your database from yesterday.
+The client should send requests for specific creatures and the server responds by 
+querying the database  and returning a nicely formatted response about that creatures
+Then find a way for the client to add or update members of the database
+
+
+
+
+
+

@@ -57,9 +57,9 @@ Thursday
 > networking server/client (microservices)
 - overview of Flask
 - Testing: 
-  - doctest revisited
+  > doctest revisited
   see https://docs.python.org/3/library/doctest.html
-  - unittest
+  > unittest
 - after lunch lab exercise
 - pytest see https://docs.pytest.org/
 
