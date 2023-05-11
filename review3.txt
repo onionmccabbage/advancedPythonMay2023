@@ -1,5 +1,7 @@
+Review 3
+========
 Writing Tests and using client/server
-For this exercise, pick the ones you want to try
+For this exercise, pick the ones you want to try, in any order
 
 Unit Testing with unittest (or pytest):
 ---------------------------------------
@@ -24,7 +26,8 @@ If the client asks for 'user/1' the server should invoke a request to
     'https://jsonplaceholder.typicode.com/users/1'
     (do this by using yours or my code from earlier)
 
-Adapt the client so it asks for a category and an id number from the user, 
+Adapt the client so it asks for a category and an id number from the user (or from sys.argv), 
+(category can be users, posts, todos, photos or albums)
 then passes these to the server
 The server then requests 'https://jsonplaceholder.typicode.com/<category>/<id>'
 and sends the response back to the client
@@ -35,8 +38,9 @@ Optional
 --------
 Write a new server (a microservice) as a front-end to your database from yesterday.
 The client should send requests for specific creatures and the server responds by 
-querying the database  and returning a nicely formatted response about that creatures
+querying the database and returning a nicely formatted response about that creatures
 Then find a way for the client to add or update members of the database
+the client should persist results as bytefiles
 
 
 
