@@ -10,7 +10,7 @@ ticketsAvailable = 100
 class TicketSeller(threading.Thread):
     ticketsSold = 0 # this represents how manmy tickets sold by a ticket seller
     def __init__(self, lock):
-        threading.Thread.__init__(self) # or Thread.__init(self)
+        threading.Thread.__init__(self)
         self.__lock = lock
         print(f'Ticket seller started selling tickets')
     def run(self):
@@ -32,9 +32,9 @@ class TicketSeller(threading.Thread):
 
 def main():
     '''here we create several ticket sellers all trying to sell tickets'''
-    lock = threading.Lock()
+    lock = threading.Lock() # note:all the threads will share this SAME lock
     sellers_l = []
-    for i in range(0 ,4):
+    for i in range(0 ,8):
         seller = TicketSeller(lock)
         sellers_l.append(seller)
         seller.start()
@@ -42,4 +42,7 @@ def main():
         seller.join()
 
 if __name__ == '__main__':
+    start = time.time()
     main()
+    end = time.time()
+    print(f'Overall time was {end-start}')
