@@ -3,6 +3,15 @@
 # an 'impure' function cannot be predicted (e.g. random)
 from functools import reduce
 
+# We can use cProfile ot get a profile of ANY module
+# invoke like this:
+# python -m cProfile -o prof_out using_fn.py
+
+# We then write code to read and display profile output
+#
+
+
+
 def squareIt(x):
     '''return the square of a number'''
     return x**2 # or x*x
