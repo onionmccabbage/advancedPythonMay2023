@@ -72,7 +72,7 @@ Friday
 > the global Interpreter Lock (GIL) will affect threading performance
 > using thread locks
 > using thread events
-- Python has -O to optimize code (especially useful for threading)
+- Python has -O to optimize code (especially useful for threading). Not especially visible difference
 - after lunch lab exercise
 - logging - context mgr, often we log by time-stamp
 - iterators __iter__
