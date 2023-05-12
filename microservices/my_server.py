@@ -9,7 +9,10 @@ def server():
     port_t = ('localhost', 9874) # choose suitable values
     # bind to these parameters
     server.bind(port_t)
-    server.listen() # we need our server to accept requests
+    # we can specify how many clients we will allow at once
+    # NB this might mean we need to run additional threads in our server
+    # then the server will respond to new clients more rapidly
+    server.listen(4) # we need our server to accept requests
     print(f'Server is running on {port_t[0]} port {port_t[1]}')
     # we need a run loop
     while True:
