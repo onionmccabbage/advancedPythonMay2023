@@ -71,6 +71,7 @@ Friday
   - concurrency and resources
 - the global Interpreter Lock (GIL) will affect threading performance
 - using thread locks
+- using thread events
 - Python has -O to optimize code (especially useful for threading)
 - after lunch lab exercise
 - logging - context mgr, often we log by time-stamp
