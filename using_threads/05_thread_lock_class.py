@@ -10,9 +10,9 @@ ticketsAvailable = 100
 class TicketSeller(threading.Thread):
     ticketsSold = 0 # this represents how manmy tickets sold by a ticket seller
     def __init__(self, lock):
-        super().__init__(self) # or Thread.__init(self)
+        threading.Thread.__init__(self) # or Thread.__init(self)
         self.__lock = lock
-        print(f'Ticket seller started selling tickeets')
+        print(f'Ticket seller started selling tickets')
     def run(self):
         global ticketsAvailable
         running = True 
