@@ -14,29 +14,13 @@ class MyClass: # implicitly iherit from object
 if __name__ == '__main__':
     start = time.time()
     c1 = MyClass() # we can target a class or function as many times as we like
-    t1 = Thread(target=c1, args=('1',)) # a one-member tuple
-    t2 = Thread(target=c1, args=('2',)) # a one-member tuple
-    t3 = Thread(target=c1, args=('3',)) # a one-member tuple
-    t4 = Thread(target=c1, args=('4',)) # a one-member tuple
-    t5 = Thread(target=c1, args=('5',)) # a one-member tuple
-    t6 = Thread(target=c1, args=('6',)) # a one-member tuple
-    t7 = Thread(target=c1, args=('7',)) # a one-member tuple
-    t8 = Thread(target=c1, args=('8',)) # a one-member tuple
-    t1.start()
-    t2.start()
-    t3.start()
-    t4.start()
-    t5.start()
-    t6.start()
-    t7.start()
-    t8.start()
-    t1.join()
-    t2.join()
-    t3.join()
-    t4.join()
-    t5.join()
-    t6.join()
-    t7.join()
-    t8.join()
+    my_threads_l = [] # a list to contain our thread instances
+    # no matter how many threads, it will always be faster than sequential operation
+    for _ in range(0, 256):
+        my_threads_l.append( Thread(target=c1, args=(str(_),)) ) # a one-member tuple 
+    for item in my_threads_l:
+        item.start()
+    for item in my_threads_l:
+        item.join()
     end = time.time()
     print(f'Total execution time was {end-start}')
