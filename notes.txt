@@ -77,7 +77,7 @@ Friday
 > logging - context mgr, often we log by time-stamp
 > named tuple
 > after lunch review
-- zip, deque etc
+> zip, deque, iter etc
 - end of course feedback
 
 
