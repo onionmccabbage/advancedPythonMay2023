@@ -66,6 +66,8 @@ Thursday
 Friday
 - profiling: timings etc. (cprofile)
 - multithreading, also limits of mutlithreading concurrency
+  - how threads are done (OS)
+  - thread pools (OS)
 - the global Interpreter Lock (GIL) will affect threading performance
 - Python has -O to optimize code (especially useful for threading)
 - after lunch lab exercise
