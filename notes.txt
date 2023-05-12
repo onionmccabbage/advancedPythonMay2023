@@ -64,7 +64,7 @@ Thursday
 - pytest see https://docs.pytest.org/
 
 Friday
-- profiling: timings etc. (cprofile)
+> profiling: timings etc. (cprofile)
 > multithreading, also limits of mutlithreading concurrency
   > how threads are done (OS)
   > thread pools (OS)
