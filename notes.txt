@@ -71,17 +71,20 @@ Friday
 - after lunch lab exercise
 - logging - context mgr, often we log by time-stamp
 - iterators __iter__
-- named tuple
-- zip
-- deque, defaultdict etc
+> named tuple
+- after lunch review
+- zip, deque, defaultdict etc
 - end of course feedback
 
 
+Course Website https://s3.eu-west-1.amazonaws.com/neueda.conygre.com/Sites/Ericsson_Advanced_Python/site/index.html
+
+Github repo for all my code https://github.com/onionmccabbage/advancedPythonMay2023
+
+Recordings usr neueda pwd c0nygre
 
 
-
-
-Useful Resources
+Other Useful Resources
 - https://pynative.com/python-exercises-with-solutions/
 - https://realpython.com/
 - moving from Py2 to Py3

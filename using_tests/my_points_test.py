@@ -36,6 +36,5 @@ class testPoint(unittest.TestCase): # inherit from TestCase
         self.assertAlmostEqual(self.p_negative.hypot(), self.p_positive.hypot(), places=2)
 
 
-
 if __name__ == '__main__':
     unittest.main() # this will run all our tests
